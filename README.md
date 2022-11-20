@@ -1,4 +1,4 @@
-# `ctypes` in Python to call C function
+# Calling C from Python using `ctypes`
 
 ```sh
 # In case you want to run the executable: ./strman
