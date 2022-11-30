@@ -14,7 +14,7 @@ struct SplitResult {
 struct SplitResult split(char *s, char char_) {
     // Store all resulting words (from the split action) next to each
     // other in memory.
-    int n = strlen(s);
+    int n = strlen(s) + 1;  // + 1 for null byte
     char *dest = malloc(n);
     if (dest == NULL) {
         printf("ERROR");
