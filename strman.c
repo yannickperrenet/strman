@@ -64,9 +64,10 @@ int main(void){
     struct SplitResult res;
     res = split("hello world", ' ');
 
-    printf("%i\n", res.len);
-    printf("%s\n", res.p[0]);
-    printf("%s\n", res.p[1]);
+    printf("Length: %i\n", res.len);
+    for (int i = 0; i < res.len; i++) {
+        printf("%s\n", res.p[i]);
+    }
 
     free_split_result(res);
 }
